@@ -1,58 +1,44 @@
-## Sales Insights Data Analysis Project
+# Sales Insights Power BI Project
 
-### Instructions to setup mysql on your local computer
+This Power BI project aims to provide valuable insights into sales data for AtliQ Hardware. The dashboard visualizes various metrics and trends to help stakeholders make informed decisions.
 
-1. Follow step in this video to install mysql on your local computer
-https://www.youtube.com/watch?v=WuBcTJnIuzo
+## Table of Contents
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+4. [Usage](#usage)
+5. [Feedback](#feedback)
+6. [Contributing](#contributing)
 
-1. SQL database dump is in db_dump.sql file above. Download `db_dump.sql` file to your local computer and import it as per instructions given in the tutorial video
+## Overview
+The Sales Insights Power BI Project is designed to analyze and visualize sales data for AtliQ Hardware. It offers a user-friendly interface to explore sales performance, trends, and patterns across different dimensions such as time, product categories, and regions.
 
-### Data Analysis Using SQL
+## Features
+- Interactive dashboard with multiple visualizations
+- Drill-down capabilities for detailed analysis
+- Trend analysis for sales revenue and quantities
+- Comparison of sales performance across products, regions, and time periods
+- Mobile-friendly layout for on-the-go access
 
-1. Show all customer records
+## Getting Started
+To get started with the Sales Insights Power BI Project, follow these steps:
+1. Clone or download the repository to your local machine.
+2. Open the Power BI file (`Sales_Insights.pbix`) using Power BI Desktop.
+3. Connect the Power BI file to your data source or import sample data provided.
+4. Customize the dashboard according to your requirements.
+5. Publish the Power BI report to Power BI Service for sharing and collaboration.
 
-    `SELECT * FROM customers;`
+## Usage
+Once the Power BI report is published, stakeholders can access it via the Power BI Service or mobile app. They can interact with the dashboard to gain insights into sales performance, identify trends, and make data-driven decisions to drive business growth.
 
-1. Show total number of customers
+## Feedback
+Feedback from stakeholders is essential for continuous improvement. If you have any suggestions, feature requests, or encountered any issues while using the Sales Insights dashboard, please feel free to [submit an issue](https://github.com/yourusername/yourrepository/issues) or [contact us](mailto:youremail@example.com).
 
-    `SELECT count(*) FROM customers;`
-
-1. Show transactions for Chennai market (market code for chennai is Mark001
-
-    `SELECT * FROM transactions where market_code='Mark001';`
-
-1. Show distrinct product codes that were sold in chennai
-
-    `SELECT distinct product_code FROM transactions where market_code='Mark001';`
-
-1. Show transactions where currency is US dollars
-
-    `SELECT * from transactions where currency="USD"`
-
-1. Show transactions in 2020 join by date table
-
-    `SELECT transactions.*, date.* FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020;`
-
-1. Show total revenue in year 2020,
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and transactions.currency="INR\r" or transactions.currency="USD\r";`
-	
-1. Show total revenue in year 2020, January Month,
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020 and and date.month_name="January" and (transactions.currency="INR\r" or transactions.currency="USD\r");`
-
-1. Show total revenue in year 2020 in Chennai
-
-    `SELECT SUM(transactions.sales_amount) FROM transactions INNER JOIN date ON transactions.order_date=date.date where date.year=2020
-and transactions.market_code="Mark001";`
-
-
-Data Analysis Using Power BI
-============================
-
-1. Formula to create norm_amount column
-
-`= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)`
+## Contributing
+Contributions are welcome! If you'd like to contribute to the project, please follow these guidelines:
+1. Fork the repository and create a new branch for your feature or enhancement.
+2. Make your changes and ensure they are well-tested.
+3. Submit a pull request detailing your changes and improvements.
 
 
 
