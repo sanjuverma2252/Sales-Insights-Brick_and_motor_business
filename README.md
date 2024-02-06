@@ -43,7 +43,7 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 
 ## Acknowledgments
 
-I would like to express my gratitude to [codebasics](https://www.youtube.com/user/codebasics) for their exceptional tutorials and tasks on data analytics. Their comprehensive learning resources have played a crucial role in enhancing my skills in Power BI and data analysis, contributing significantly to the success of this project.
+I would like to express my gratitude to codebasics for their exceptional tutorials and tasks on data analytics. Their comprehensive learning resources have played a crucial role in enhancing my skills in Power BI and data analysis, contributing significantly to the success of this project.
 
 
 
