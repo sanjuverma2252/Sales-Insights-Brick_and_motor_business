@@ -9,6 +9,7 @@ This Power BI project aims to provide valuable insights into sales data for Atli
 4. [Usage](#usage)
 5. [Feedback](#feedback)
 6. [Contributing](#contributing)
+7. [Acknowledgments](#acknowledgments)
 
 ## Overview
 The Sales Insights Power BI Project is designed to analyze and visualize sales data for AtliQ Hardware. It offers a user-friendly interface to explore sales performance, trends, and patterns across different dimensions such as time, product categories, and regions.
@@ -39,6 +40,10 @@ Contributions are welcome! If you'd like to contribute to the project, please fo
 1. Fork the repository and create a new branch for your feature or enhancement.
 2. Make your changes and ensure they are well-tested.
 3. Submit a pull request detailing your changes and improvements.
+
+## Acknowledgments
+
+I would like to express my gratitude to [codebasics](https://www.youtube.com/user/codebasics) for their exceptional tutorials and tasks on data analytics. Their comprehensive learning resources have played a crucial role in enhancing my skills in Power BI and data analysis, contributing significantly to the success of this project.
 
 
 
